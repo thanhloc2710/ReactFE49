@@ -32,7 +32,7 @@ export default class RenderWithState extends Component {
         // gọi lại hàm render chạy lại
         // setState là phương thức bức đồng bộ
         
-        let newState = {login:true};
+        let newState = {login:!this.state.login};
 
         this.setState(newState,()=>{
             console.log(this.state.login);
@@ -44,6 +44,9 @@ export default class RenderWithState extends Component {
                 {/* toán tử ? toán tử 3 ngôi */}
                 {/* {this.login ? <p>Hello {this.userName}</p> : <div><button className="btn btn-success">Đăng nhập</button></div>} */}
                 {this.renderLogin()}
+                <button className="btn btn-success" onClick={() =>{
+                this.handleLogin();
+            }}>Đăng nhập</button>
             </div>
         )
     }

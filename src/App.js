@@ -19,11 +19,13 @@ function App() {
       {/* <BaiTapLayout2 /> */}
       {/* <DataBinding /> */}
       {/* <HandleEvent /> */}
-      {/* <BaiTapThucHanhLayout /> */}
+
+      <BaiTapThucHanhLayout />
+      
       {/* <Styling /> */}
       {/* <RenderWithState /> */}
       {/* <BaiTapChonXe /> */}
-      <RenderWithMap />
+      {/* <RenderWithMap /> */}
     </div>
   );
 }
