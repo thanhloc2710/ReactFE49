@@ -1,4 +1,4 @@
-.header{
+/* .header{
   background-color: red;
   color: #fff;
   height: 150px;
@@ -21,4 +21,18 @@
 .row , .col-4, .col-8{
   width: 100%;
   padding: 0;
+} */
+
+footer{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.shopName{
+  padding-top: 80px !important;
+  font-size: 20px;
+  padding-left: 60px !important;
+}
+
+#carouselExampleIndicators{
+  margin-top: 56px;
 }
