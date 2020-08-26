@@ -1,0 +1,10 @@
+/* .divbao{
+    padding: 0;
+    pad
+} */
+.background-big{
+    background: url(./avanger.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 3000px;
+}

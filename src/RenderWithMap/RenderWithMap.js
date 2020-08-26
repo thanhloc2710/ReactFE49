@@ -28,16 +28,30 @@ export default class RenderWithMap extends Component {
 
         let arrJSXProduct = this.producList.map((product,index)=>{
             return <div className="col-4" key={index}>
-                <div classname="card text-left">
-                    <img classname="card-img-top" src="http://picsum.photos/200/200" alt="{product.name}" />
-                    <div classname="card-body">
-                        <h4 classname="card-title">{product.name}</h4>
-                        <p classname="card-text">{product.price}</p>
+                        <div classname="card text-left">
+                            <img classname="card-img-top" src="http://picsum.photos/200/200" alt="{product.name}" />
+                            <div classname="card-body">
+                                <h4 classname="card-title">{product.name}</h4>
+                                <p classname="card-text">{product.price}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
         })
         return arrJSXProduct;
+    }
+
+    renderDienThoai = () =>{
+        return this.producList.map((item,index)=>{
+            return <tr key = {index}>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td>{item.price}</td>
+                <td>
+                    <button className='text-danger'>Xoá</button>
+                </td>
+            </tr>
+
+        })
     }
 
 
@@ -50,8 +64,25 @@ export default class RenderWithMap extends Component {
             //     123123132
             // </div>]
 
-            <div className="container">
-                {this.renderProduct()}
+            // <div className="container">
+            //     {this.renderProduct()}
+            // </div>
+            <div className='container'>
+                <h3 className='text-center'>Danh sách sản phẩm</h3>
+                <table className='table'>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.renderDienThoai()
+                        }
+                        </tbody>
+                </table>
             </div>
         )
     }
