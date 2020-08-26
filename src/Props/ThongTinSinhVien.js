@@ -13,8 +13,8 @@ export default class ThongTinSinhVien extends Component {
                 <div className="card">
                     <img style={{width: '100%'}} className="card-img-top" src={this.props.sinhVien.hinhAnh} alt />
                     <div className="card-body">
-                        <h4 className="card-title">Title</h4>
-                        <p className="card-text">Text</p>
+            <h4 className="card-title">{this.props.sinhVien.hoTen}</h4>
+                        <p className="card-text">{this.props.sinhVien.lop}</p>
                     </div>
                 </div>
                 </div>

@@ -1,7 +1,7 @@
-/* .divbao{
+.divbao{
     padding: 0;
-    pad
-} */
+    margin: 0;   
+}
 .background-big{
     background: url(./avanger.jpg);
     background-size: contain;
