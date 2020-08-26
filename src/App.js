@@ -43,7 +43,7 @@ function App() {
       {/* <BaiTapRenderPhim /> */}
       {/* <DemoProps /> */}
       <BaiTapQLSP mangSP={mangSanPham} />
-    </div>
+    </div> 
   );
 }
 
