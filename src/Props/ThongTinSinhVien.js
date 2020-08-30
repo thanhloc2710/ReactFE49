@@ -5,7 +5,7 @@ export default class ThongTinSinhVien extends Component {
         return (
             <div>
                 {/* this.props là thuộc tính có sẵn của component, 
-                Lưu ý: dùng để nhận giá trị từ component từ component cha truyền vào, 
+                Lưu ý: dùng để nhận giá trị từ component cha truyền vào, 
                 và không thể thay đổi đuoc giá trị đó */}
                 {/* <p>Họ Tên: {this.props.sinhVien.hoTen}</p>
                 <p>Lớp: {this.props.sinhVien.lop}</p>

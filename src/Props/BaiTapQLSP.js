@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
+import SanPham from './SanPham'
 
 export default class BaiTapQLSP extends Component {
     renderSanPham = () => {
         return this.props.mangSP.map((sp, index) => {
             return <div className='col-3' key={index}>
-                <img className="card-img-top" src={sp.hinhAnh} style={{ height: 300, width: 300 }}></img>
-                <h3>{sp.tenSP}</h3>
-                <button className='btn btn-success' onClick={()=>{
-                    this.xemChiTiet(sp)
-                }}>Xem chi tiết</button>
+                <SanPham sp={sp} xemChiTiet ={this.xemChiTiet} />
+                
             </div>
         })
     }
 
+    
     xemChiTiet = (spClick)=>{
         console.log('spClick', spClick);
         // this.setState cho sản phẩm chi tiết  = sản phẩm được click
