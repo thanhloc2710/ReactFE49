@@ -58,7 +58,7 @@ export default class BaiTapGioHang extends Component {
         //     gioHang:gioHangUpdate
         // })
 
-        //filter lọc lấy ra maSP !== maSP
+        //filter lọc lấy ra các sp.maSP !== maSP thoả điều kiện thì push vào giỏ hàng nếu sp.maSP === maSP thì không thoả điều kiện sẽ không push vào
         this.setState({
             gioHang: this.state.gioHang.filter(sp => sp.maSP !== maSP)
         })

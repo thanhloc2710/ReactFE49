@@ -14,6 +14,7 @@ import BaiTapRenderPhim from './RenderWithMap/BaiTapRenderPhim';
 import DemoProps from './Props/DemoProps';
 import BaiTapQLSP from './Props/BaiTapQLSP';
 import BaiTapGioHang from './BaiTapGioHang/BaiTapGioHang';
+import BaiTapGioHangRedux from './BaiTapRedux/BaiTapGioHangRedux/BaiTapGioHangRedux';
 
 function App() {
   // let mangSanPham = [
@@ -44,7 +45,8 @@ function App() {
       {/* <BaiTapRenderPhim /> */}
       {/* <DemoProps /> */}
       {/* <BaiTapQLSP mangSP={mangSanPham} /> */}
-      <BaiTapGioHang />
+      {/* <BaiTapGioHang /> */}
+      <BaiTapGioHangRedux />
     </div> 
   );
 }
